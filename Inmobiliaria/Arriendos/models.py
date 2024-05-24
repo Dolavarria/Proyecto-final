@@ -40,3 +40,37 @@ class SolicitudArriendo(models.Model):
     arrendatario=models.ForeignKey(User,related_name='Solicitudarrendatario',on_delete=models.CASCADE)
     fecha_solicitud=models.DateTimeField(auto_now_add=True)
     estado=models.CharField(max_length=50,choices=[('pendiente','Pendiente'),('aceptada','Aceptada'),('rechazada','Rechazada')])
+
+'''
+Requerimiento 3 (Shell Django)
+
+from Arriendos.models import User,Propiedad,SolicitudArriendo
+
+#Crear objeto con el modelo
+new_user = User.objects.create(
+    username='diego',
+    rut='15341672-1',
+    nombres='Diego',
+    apellidos='Olavarria',
+    direccion='123 Calle falsa',
+    telefono_personal='3817291923',
+    correo_electronico='diego@example.com',
+    tipo_usuario='arrendatario'
+)
+
+#Enlistar desde el modelo de datos
+all_users = User.objects.all()
+for user in all_users:
+    print(user)
+
+#Actualizar un registro en el modelo
+all_users = User.objects.all()
+user = User.objects.get(username='diego')
+user.correo_electronico = 'diego.edit@example.com'
+user.save()
+
+#Eliminar un registro en el modelo
+user = User.objects.get(username='john')
+user.delete()
+
+'''

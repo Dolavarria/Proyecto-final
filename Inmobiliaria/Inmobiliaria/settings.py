@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'Inmobiliaria.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #conectar a postgresql
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Inmobiliaria',
+        'USER': 'postgres',
+        'PASSWORD': 'Diego8134',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
