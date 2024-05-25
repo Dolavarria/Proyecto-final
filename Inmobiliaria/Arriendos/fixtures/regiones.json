@@ -1,0 +1,99 @@
+[
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Arica y Parinacota"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Tarapacá"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Antofagasta"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Atacama"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Coquimbo"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Valparaíso"
+        }
+
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región Metropolitana"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región del Libertador General Bernardo O'Higgins"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región del Maule"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región del Ñuble"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región del Biobío"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de la Araucanía"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Los Ríos"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Los Lagos"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Aysén del General Carlos Ibáñez del Campo"
+        }
+    },
+    {
+        "model": "Arriendos.region",
+        "fields": {
+            "nombre": "Región de Magallanes y de la Antártica Chilena"
+        }
+    }
+]

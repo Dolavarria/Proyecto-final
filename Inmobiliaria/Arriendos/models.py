@@ -41,6 +41,14 @@ class SolicitudArriendo(models.Model):
     fecha_solicitud=models.DateTimeField(auto_now_add=True)
     estado=models.CharField(max_length=50,choices=[('pendiente','Pendiente'),('aceptada','Aceptada'),('rechazada','Rechazada')])
 
+class Region(models.Model):
+    id=models.AutoField(primary_key=True, null=False)
+    nombre=models.CharField(max_length=100, null=False, blank=False)
+    
+class Comuna(models.Model):
+    id=models.AutoField(primary_key=True, null=False)
+    nombre=models.CharField(max_length=50, null=False, blank=False)
+    region=models.ForeignKey(Region,related_name='comuna_region',on_delete=models.CASCADE)
 '''
 Requerimiento 3 (Shell Django)
 
