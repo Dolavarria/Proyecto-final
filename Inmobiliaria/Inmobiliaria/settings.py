@@ -74,9 +74,10 @@ WSGI_APPLICATION = 'Inmobiliaria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+''''
+#conectar a postgresql
 DATABASES = {
     'default': {
-        #conectar a postgresql
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Inmobiliaria',
         'USER': 'postgres',
@@ -85,7 +86,18 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+'''
+#conectar a mysql
+DATABASES={
+    'default':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'Inmobiliaria',
+        'USER':'root',
+        'PASSWORD':'Diego8134',
+        'HOST':'localhost',
+        'PORT':'3306',
+}
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

@@ -47,7 +47,7 @@ class Region(models.Model):
     
 class Comuna(models.Model):
     id=models.AutoField(primary_key=True, null=False)
-    nombre=models.CharField(max_length=50, null=False, blank=False)
+    nombre=models.CharField(max_length=250, null=False, blank=False)
     region=models.ForeignKey(Region,related_name='comuna_region',on_delete=models.CASCADE)
 '''
 Requerimiento 3 (Shell Django)
