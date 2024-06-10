@@ -1,0 +1,38 @@
+[
+    {
+        "model": "Arriendos.propiedad",
+        "pk": 1,
+        "fields": {
+            "nombre": "Propiedad 1",
+            "descripcion": "Esta es la descripción de la propiedad 1",
+            "m2_construidos": 100,
+            "m2_totales": 200,
+            "cantidad_estacionamientos": 2,
+            "cantidad_habitaciones": 3,
+            "cantidad_banos": 2,
+            "direccion": "Direccion 1",
+            "tipo_inmueble": "casa",
+            "precio_mensual": 500000,
+            "comuna": 9,
+            "propietario": 1
+        }
+    },
+    {
+        "model": "Arriendos.propiedad",
+        "pk": 2,
+        "fields": {
+            "nombre": "Propiedad 2",
+            "descripcion": "Esta es la descripción de la propiedad 2",
+            "m2_construidos": 150,
+            "m2_totales": 300,
+            "cantidad_estacionamientos": 3,
+            "cantidad_habitaciones": 4,
+            "cantidad_banos": 3,
+            "direccion": "Direccion 2",
+            "tipo_inmueble": "departamento",
+            "precio_mensual": 70000000,
+            "comuna": 12,
+            "propietario": 3
+        }
+    }
+]

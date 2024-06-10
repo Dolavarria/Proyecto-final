@@ -1,0 +1,133 @@
+<main>
+    <div class="container">
+        <div class="col-12 col-md-6 offset-0 offset-md-3 mt-4 mb-4">
+            <h3 class="text-center">Registrarse</h3>
+        </div>
+
+        <div>
+          {% if form.errors %}
+          <div class="container">
+            <div class="col-12 col-md-6 offset-0 offset-md-3 mt-4 mb-4">
+              <p class="text-center">Hubo un error en el registro. Inténtalo de nuevo.</p>
+            </div>
+          {% endif %}
+          <form method="post" action="{% url 'register' %}" class="register-form">
+            {% csrf_token %}
+        
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.username }}
+                    {% if form.username.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.username.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.password1 }}
+                    {% if form.password1.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.password1.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.password2 }}
+                    {% if form.password2.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.password2.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.tipo_usuario }}
+                    {% if form.tipo_usuario.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.tipo_usuario.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.rut }}
+                    {% if form.rut.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.rut.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.nombres }}
+                    {% if form.nombres.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.nombres.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.apellidos }}
+                    {% if form.apellidos.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.apellidos.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.direccion }}
+                    {% if form.direccion.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.direccion.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.telefono_personal }}
+                    {% if form.telefono_personal.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.telefono_personal.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="mb-3 text-center">
+                <div>
+                    {{ form.correo_electronico }}
+                    {% if form.correo_electronico.errors %}
+                        <div class="invalid-feedback">
+                            {{ form.correo_electronico.errors|join:", " }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-info">Registrarse</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</main>

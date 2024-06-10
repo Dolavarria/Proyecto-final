@@ -1,0 +1,6 @@
+
+Region: Región de Antofagasta
+Nombre: Propiedad 2, Descripcion: Esta es la descripción de la propiedad 2, Comuna: Taltal
+
+Region: Región de Arica y Parinacota
+Nombre: Propiedad 1, Descripcion: Esta es la descripción de la propiedad 1, Comuna: Arica

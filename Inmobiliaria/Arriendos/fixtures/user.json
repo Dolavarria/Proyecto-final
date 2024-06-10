@@ -1,0 +1,47 @@
+[
+    {
+        "model": "Arriendos.user",
+        "pk": 1,
+        "fields": {
+            "username": "usuario1",
+            "password": "contraseña1",
+            "nombres": "Nombre1",
+            "apellidos": "Apellido1",
+            "rut": "12345678-9",
+            "direccion": "Direccion1",
+            "telefono_personal": "123456789",
+            "correo_electronico": "correo1@example.com",
+            "tipo_usuario": "arrendatario"
+        }
+    },
+    {
+        "model": "Arriendos.user",
+        "pk": 2,
+        "fields": {
+            "username": "usuario2",
+            "password": "contraseña2",
+            "nombres": "Nombre2",
+            "apellidos": "Apellido2",
+            "rut": "98765432-1",
+            "direccion": "Direccion2",
+            "telefono_personal": "987654321",
+            "correo_electronico": "correo2@example.com",
+            "tipo_usuario": "arrendador"
+        }
+    },
+    {
+        "model": "Arriendos.user",
+        "pk": 3,
+        "fields": {
+            "username": "usuario3",
+            "password": "contraseña3",
+            "nombres": "Nombre3",
+            "apellidos": "Apellido3",
+            "rut": "61762452-K",
+            "direccion": "Direccion3",
+            "telefono_personal": "96176245",
+            "correo_electronico": "correo3@example.com",
+            "tipo_usuario": "arrendatario"
+        }
+    }
+]

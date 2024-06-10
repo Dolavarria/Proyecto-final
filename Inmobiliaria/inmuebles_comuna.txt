@@ -1,0 +1,6 @@
+
+Comuna: Arica
+Nombre: Propiedad 1, Descripcion: Esta es la descripción de la propiedad 1
+
+Comuna: Taltal
+Nombre: Propiedad 2, Descripcion: Esta es la descripción de la propiedad 2

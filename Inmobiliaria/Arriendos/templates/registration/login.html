@@ -1,0 +1,39 @@
+
+<main>
+    <div class="container">
+        <div class="col-12 col-md-6 offset-0 offset-md-3 mt-4 mb-4">
+            <h3 class="text-center">Iniciar sesión</h3>
+        </div>
+
+        <div>
+          {% if form.errors %}
+          <div class="container">
+            <div class="col-12 col-md-6 offset-0 offset-md-3 mt-4 mb-4">
+
+              <p class="text-center">Su nombre de usuario y contraseña no coinciden. Inténtalo de nuevo.</p>
+            </div>
+
+                {% endif %}
+                <form method="post" action="{% url 'login' %}" class="login-form">
+                    {% csrf_token %}
+                
+                    <div class="mb-3 text-center">
+                        <div>
+                            {{ form.username }}
+                        </div>
+                    </div>
+                
+                    <div class="mb-3 text-center">
+                        <div>
+                            {{ form.password }}
+                        </div>
+                    </div>
+                
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-info">Iniciar sesión</button>
+                    </div>
+                    <input type="hidden" name="next" value="{{ next }}">
+                </form>
+        </div>
+    </div>
+</main>

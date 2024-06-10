@@ -1,0 +1,16 @@
+{% block content %}
+  <h2>Perfil de usuario</h2>
+  <p>Bienvenido, {{ user.username }}!</p>
+  <p>RUT: {{ user.rut }}</p>
+  <p>Nombres: {{ user.nombres }}</p>
+  <p>Apellidos: {{ user.apellidos }}</p>
+  <p>Dirección: {{ user.direccion }}</p>
+  <p>Teléfono personal: {{ user.telefono_personal }}</p>
+  <p>Correo electrónico: {{ user.correo_electronico }}</p>
+  <p>Tipo de usuario: {{ user.tipo_usuario }}</p>
+  <form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Cerrar sesión</button>
+  </form>
+  <a href="{% url 'update_profile' %}">Actualizar</a>
+{% endblock %}
